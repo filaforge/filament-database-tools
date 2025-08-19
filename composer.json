@@ -1,5 +1,5 @@
 {
-    "name": "filaforge/database-tools",
+    "name": "filament/database-tools",
     "description": "Combined database viewer and query builder for FilamentPHP - A comprehensive tool for database management",
     "type": "library",
     "license": "MIT",
