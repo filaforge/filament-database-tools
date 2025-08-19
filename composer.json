@@ -1,6 +1,6 @@
 {
     "name": "filament/database-tools",
-  "version": "0.1.0",
+  "version": "0.1.2",
     "description": "Combined database viewer and query builder for FilamentPHP - A comprehensive tool for database management",
     "type": "library",
     "license": "MIT",
