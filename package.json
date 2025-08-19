@@ -1,0 +1,19 @@
+{
+    "name": "filaforge-database-tools",
+    "version": "1.0.0",
+    "description": "Combined database viewer and query builder for FilamentPHP",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "node bin/build.js --dev",
+        "build": "node bin/build.js",
+        "watch": "node bin/build.js --watch"
+    },
+    "devDependencies": {
+        "esbuild": "^0.17.19",
+        "postcss": "^8.4.27",
+        "postcss-cli": "^10.1.0",
+        "postcss-nesting": "^13.0.0",
+        "cssnano": "^6.0.1"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "name": "filaforge/database-tools",
+    "description": "Combined database viewer and query builder for FilamentPHP - A comprehensive tool for database management",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "Filament",
+        "Database",
+        "Tools",
+        "Viewer",
+        "Query",
+        "Admin",
+        "Panel"
+    ],
+    "homepage": "https://github.com/filaforge/database-tools",
+    "authors": [
+        {
+            "name": "Filaforge",
+            "email": "filaforger@gmail.com",
+            "homepage": "https://github.com/filaforge"
+        }
+    ],
+    "support": {
+        "email": "filaforger@gmail.com",
+        "source": "https://github.com/filaforge/database-tools",
+        "issues": "https://github.com/filaforge/database-tools/issues",
+        "docs": "https://github.com/filaforge/database-tools#readme"
+    },
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^4.0",
+        "illuminate/support": "^12.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Filaforge\\DatabaseTools\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Filaforge\\DatabaseTools\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Filaforge\\DatabaseTools\\FilaforgeDatabaseToolsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

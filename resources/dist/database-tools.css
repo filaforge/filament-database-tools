@@ -1,0 +1,177 @@
+/* Database Tools Custom Styles */
+
+/* Tab Navigation */
+.database-tools-tab {
+    @apply px-4 py-2 text-sm font-medium rounded-t-lg transition-colors;
+}
+
+.database-tools-tab.active {
+    @apply bg-blue-500 text-white;
+}
+
+.database-tools-tab.inactive {
+    @apply text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200;
+}
+
+/* Table Buttons */
+.database-tools-table-button {
+    @apply p-3 text-left border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors;
+}
+
+.database-tools-table-button.selected {
+    @apply border-blue-500 bg-blue-50 dark:bg-blue-900/20;
+}
+
+.database-tools-table-button.default {
+    @apply border-gray-200 dark:border-gray-600;
+}
+
+/* Action Buttons */
+.database-tools-action-button {
+    @apply px-4 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.database-tools-action-button.primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+}
+
+.database-tools-action-button.secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+}
+
+/* Table Styling */
+.database-tools-table {
+    @apply min-w-full divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+.database-tools-table thead {
+    @apply bg-gray-50 dark:bg-gray-700;
+}
+
+.database-tools-table th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider;
+}
+
+.database-tools-table tbody {
+    @apply bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+.database-tools-table tr {
+    @apply hover:bg-gray-50 dark:hover:bg-gray-700;
+}
+
+.database-tools-table td {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white;
+}
+
+/* Form Styling */
+.database-tools-form {
+    @apply space-y-4;
+}
+
+.database-tools-form-group {
+    @apply space-y-2;
+}
+
+.database-tools-form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.database-tools-form-input {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white;
+}
+
+.database-tools-form-textarea {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white;
+}
+
+/* Alert Styling */
+.database-tools-alert {
+    @apply rounded-lg p-4 border;
+}
+
+.database-tools-alert.info {
+    @apply bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800;
+}
+
+.database-tools-alert.warning {
+    @apply bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800;
+}
+
+.database-tools-alert.error {
+    @apply bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800;
+}
+
+.database-tools-alert-icon {
+    @apply w-5 h-5 mr-3;
+}
+
+.database-tools-alert-title {
+    @apply text-sm font-medium;
+}
+
+.database-tools-alert-message {
+    @apply text-sm mt-1;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .database-tools-table-button {
+        @apply p-2 text-sm;
+    }
+    
+    .database-tools-action-button {
+        @apply px-3 py-2 text-sm;
+    }
+    
+    .database-tools-table {
+        @apply text-xs;
+    }
+    
+    .database-tools-table th,
+    .database-tools-table td {
+        @apply px-3 py-2;
+    }
+}
+
+/* Dark Mode Enhancements */
+.dark .database-tools-tab {
+    @apply border-gray-600;
+}
+
+.dark .database-tools-table-button {
+    @apply border-gray-600 hover:bg-gray-700;
+}
+
+.dark .database-tools-form-input,
+.dark .database-tools-form-textarea {
+    @apply bg-gray-700 border-gray-600 text-white;
+}
+
+/* Animation and Transitions */
+.database-tools-tab,
+.database-tools-table-button,
+.database-tools-action-button {
+    @apply transition-all duration-200 ease-in-out;
+}
+
+.database-tools-table tr {
+    @apply transition-colors duration-150 ease-in-out;
+}
+
+/* Focus States */
+.database-tools-tab:focus,
+.database-tools-table-button:focus,
+.database-tools-action-button:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Loading States */
+.database-tools-loading {
+    @apply opacity-50 pointer-events-none;
+}
+
+.database-tools-loading::after {
+    content: '';
+    @apply absolute inset-0 bg-gray-200 dark:bg-gray-700 rounded animate-pulse;
+}
