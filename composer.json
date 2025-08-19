@@ -1,5 +1,5 @@
 {
-    "name": "filaforge/filament-database-tools",
+    "name": "filament/database-tools",
   "version": "0.1.0",
     "description": "Combined database viewer and query builder for FilamentPHP - A comprehensive tool for database management",
     "type": "library",
